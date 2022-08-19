@@ -1,46 +1,90 @@
 <html>
-	<head></head>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 33%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #CCCCFF;
+}
+</style>
+</head>
 	<body>
-		<table>
-			<thead>
-				<th><p style="color:green;background-color:yellow;"> it is Swastika here  </p>
-				<p style="">It is my website.</p>
-				<p style="">phupaji taught me to make a website</p>
-				<img src="PraveenSuhalka.jpg" alt="racheal" width="500" height="333">
-				<h4>we sisters</h4></th>
-			</thead>
-		</table>
-		<table title="sisters" style="border-color:red;border-width:10px;width:100%">
-			<thead>
-				<th>s.no.</th>
-				<th>name</th>
-				<th>age</th>
-				<th>class</th>
-				<th>pic</th>
-			</thead>
-			<tbody>
-				<tr style="background-color:blue">
-					<td>1</td>
-					<td>Swastikaa</td>
-					<td>11</td>
-					<td>6th</td>
-					<td><img src="racheal.jpg" alt="racheal" width="500" height="333"></td>
-				</tr>
-				<tr style="background-color:yellow">
-					<td>2</td>
-					<td>Prishu</td>
-					<td>5</td>
-					<td>KG</td>
-					<td><img src="Prishu.jpg" alt="Prishu" width="500" height="333">></td>
-				</tr>
-				<tr style="background-color:green">
-					<td>3</td>
-					<td>Dheru</td>
-					<td>4</td>
-					<td>Nursery</td>
-					<td><img src="dheru.jpg" alt="dheru" width="500" height="333"></td>
-				</tr>
-			</tbody>
-		</table>
+		<div style="width:100%;background-color:#CCCCFF;">
+				<div><h1 style="text-align:center;color:black;">WELCOME</h1></div>
+				<div><h5 style="text-align:center;color:black;"> It is Swastika here. It is my website. I am learning to make a website.</h5></div>
+				<br/>
+		</div>
+		<div style="text-align:center;color:black;">
+		<h3>WE SISTERS</h3>
+			<br/>
+		</div>
+		
+						
+		<div class="row">
+		  <div class="column">
+			<div class="card" style="">
+			  <img src="racheal.jpg" alt="Swastika" style="width:100%;height:300px;">
+			  <div class="container">
+				<h4><b>Swastika</b></h4>
+				<p>11 yrs 6th Standard</p>
+			  </div>
+			</div>
+		  </div>
+		  <div class="column">
+			<div class="card">
+			  <img src="Prishu.jpg" alt="Prishu" style="width:100%;height:300px;">
+			  <div class="container">
+				<h4><b>Prishu</b></h4>
+				<p>6 yrs KG Standard</p>
+			  </div>
+			</div>
+		  </div>
+		  <div class="column">
+			<div class="card">
+			  <img src="dheru.jpg" alt="dheru" style="width:100%;height:300px;">
+			  <div class="container">
+				<h4><b>dheru</b></h4>
+				<p>5 yrs Nursery Standard</p>
+			  </div>
+			</div>
+		  </div>
+		</div>
 	</body>
 </html>
